@@ -1,0 +1,14 @@
+<div class="form-row align-items-center" style="justify-content: center">
+  <input
+    style="width: 50%"
+    class="form-control"
+    type="search"
+    placeholder="Search for Gifs"
+    aria-label="Search"
+    #gif
+    (keyup.enter)="search(gif.value)"
+  />
+  <button (click)="search(gif.value)" class="btn btn-outline-success ml-2">
+    Search
+  </button>
+</div>
